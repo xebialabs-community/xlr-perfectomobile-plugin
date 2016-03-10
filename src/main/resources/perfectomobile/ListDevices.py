@@ -8,8 +8,8 @@ from com.perfectomobile.httpclient import Credentials, ParameterValue
 from com.perfectomobile.httpclient.device import DevicesHttpClient
 
 
-credentials = Credentials(perfectomobileServer.username, perfectomobileServer.passwor)
-client = DevicesHttpClient(perfectomobileServer.url, credentials)
+credentials = Credentials(perfectomobileServer['username'], perfectomobileServer['password'])
+client = DevicesHttpClient(perfectomobileServer['url'], credentials)
 inputParameters = []
 param = ParameterValue("availableTo", availableTo)
 inputParameters.append(param)
