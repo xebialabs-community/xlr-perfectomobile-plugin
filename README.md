@@ -21,11 +21,9 @@ See the **XL Release Reference Manual** for background information on XL Release
 
 ## Types ##
 
-\\+ CreateIssue
-    * `assetType`: For a list of possible values, see [Asset Types](https://community.perfectomobile.com/Developers/Developer-Library/Concepts/Asset_Type)
-    * `projectId`: The oid of the project you want to create the issue for, f.e. Scope:1535
-    * `attributes`: Map of key / value pairs
-    * `token`: output property - Output token which is the oid reference
++ ListDevices
+    * `availableTo`: Define the username to list the devices available to.
+    * `devices`: (Output property) List of available devices (deviceId, available).
 
 
 ## Testing / Building ##
