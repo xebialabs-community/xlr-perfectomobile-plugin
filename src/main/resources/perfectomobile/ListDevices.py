@@ -23,4 +23,4 @@ except:
 
 devices = {}
 for device in perfecto_devices:
-    devices[device.getResponseValue("deviceId")] = device.getResponseValue("available")
+    devices[device.getResponseValue("deviceId")] = "%s | %s" % (device.getResponseValue("model"), device.getResponseValue("available"))

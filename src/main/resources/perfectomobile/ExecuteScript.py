@@ -11,8 +11,9 @@ from com.perfectomobile.httpclient.execution import ExecutionsHttpClient
 credentials = Credentials(perfectomobileServer['username'], perfectomobileServer['password'])
 client = ExecutionsHttpClient(perfectomobileServer['url'], credentials)
 try:
-    scrip_execution_result = client.executeScript(deviceId, scriptKey)
-    executionId = scrip_execution_result.getExecutionId()
+    for key in deviceIds:
+        scrip_execution_result = client.executeScript(key, scriptKey)
+        executionId[key] = scrip_execution_result.getExecutionId()
 except:
     print "Failed to Execute script.\n"
     raise

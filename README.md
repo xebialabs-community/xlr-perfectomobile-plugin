@@ -18,12 +18,23 @@ See the **XL Release Reference Manual** for background information on XL Release
 
 * Place the `jar` into plugins
 * Place the perfectomobile java sdk into plugins (download from [Perfecto Mobile Repository](http://repository-perfectomobile.forge.cloudbees.com/public/com/perfectomobile/http-client/5.6.0.2/)).
+* Place the perfectomobile web driver into plugins (download from [Perfecto Mobile Repository](http://repository-perfectomobile.forge.cloudbees.com/public/com/perfectomobile/pm-webdriver/5.6.0.2/)).
 
 ## Types ##
 
 + ListDevices
     * `availableTo`: Define the username to list the devices available to.
     * `devices`: (Output property) List of available devices (deviceId, available).
++ ExecuteScript
+    * `deviceIds`: Ids of the devices to execute the script on.
+    * `scriptKey`: Key of the script to be executed
+    * `executionIds`: (Output property)Id of the execution.
++ InstallApplication
+    * `deviceIds`: Ids of the devices to execute the script on.
+    * `applicationUrl`: Url of the application to be installed.
+    * `repositoryKey`: Location in the repository where the file application will be uploaded. For example: PUBLIC:PMIOSDemo.ipa
++ ResetApplications
+    * `deviceIds`: Ids of the devices to reset.
 
 
 ## Testing / Building ##
