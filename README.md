@@ -19,6 +19,7 @@ See the **XL Release Reference Manual** for background information on XL Release
 * Place the `jar` into plugins
 * Place the perfectomobile java sdk into plugins (download from [Perfecto Mobile Repository](http://repository-perfectomobile.forge.cloudbees.com/public/com/perfectomobile/http-client/5.6.0.2/)).
 * Place the perfectomobile web driver into plugins (download from [Perfecto Mobile Repository](http://repository-perfectomobile.forge.cloudbees.com/public/com/perfectomobile/pm-webdriver/5.6.0.2/)).
+* Place the selenium api into plugins (download from [Selenium api](http://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api/2.52.0)
 
 ## Types ##
 
