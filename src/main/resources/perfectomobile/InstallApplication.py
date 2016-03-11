@@ -5,6 +5,7 @@
 #
 
 from java.io import File
+from java.net import Url
 
 from org.apache.commons.io import FileUtils
 
@@ -14,7 +15,7 @@ driver = MobileDriver(perfectomobileServer['url'], perfectomobileServer['usernam
 
 try:
     file = File.createTempFile("application","maf")
-    FileUtils.copyURLToFile(applicationUrl, file, 300000, 300000)
+    FileUtils.copyURLToFile(Url(applicationUrl), file, 300000, 300000)
 
     driver.uploadMedia(repositoryKey, file)
     for key in deviceIds:
