@@ -20,6 +20,7 @@ try:
     driver.uploadMedia(repositoryKey, file)
     for key in deviceIds:
         device = driver.getDevice(key)
+        device.open()
         device.installApplication(repositoryKey)
 
 finally:
