@@ -8,7 +8,7 @@ deploy:
   provider: releases
   api_key:
     secure: VekZAfc07yimYxOOMclBRioNYdE3OVy3N3O8gDJMlAYooDrwutmff8D/DMoWyCUZAuHjirdvvDlFOoqXAIy2NXd56GU/UoNws/e4FK2xdBZkYoaDfqUAbJOE7NDGA6VEav6/trrTbg//RbHV+avOhOKbhIFN8igK0YEz9pILuqDMqWu9/Nu/kEhfkCmNNhLbJNvOCKLIk3og3gd9PosFtlrv4gW8BoiGqD8mITReWH9IBUAb5Qs4Dg+DTGEqxZCkl/T+RwQiDFw1S0M2VtvmmPDYUHvBsGTc2JteeoMUzP7NSBkTPDcrabAUi2RMSqAxUDmeaZuwBSa0EJoDkX7Ye86wM/xMbInqfS6DflCX72pI6fTrrQB/gLxpYXZ4OFeQvCnEVrIimH3G7QIlF0I1rruuCefIvcf7ui53at6MCCG3gyHNBlmevUQ87bjaR6/JDA1LXQzoeopyJTqZsC6UUPKsd3bqXbq+LQ1VnUy30gjWvuOfWSyRQF7AuUh+Xxrn9YdzDRHzAi02hS3ta10/epPGZQzJLy/3z78cxcTtF5Qjzd5cwHQiPcwdqX5HW3Y3uURqZxy/Ys5NeW04IXbU+dOXofJkq2nC9NiuJXzPcsWjbCaXpV8nGUuKpEP0CPbrvnrFgOzbfBQcLRSiKfN4XhTSXs0R1mnzxm57KvhG9Fg=
-  file: build/libs/xlr-perfectomobile-plugin-1.0.0.RC4.jar
+  file: build/libs/xlr-perfectomobile-plugin-1.0.0.RC5.jar
   skip_cleanup: true
   on:
     all_branches: true
