@@ -25,8 +25,15 @@
     <type type="perfectomobile.ExecuteScript" extends="perfectomobile.Task">
         <property name="deviceIds" category="input" kind="map_string_string" description="Ids of the devices to execute the script on."/>
         <property name="scriptKey" category="input" description="Key of the script to be executed"/>
+        <property name="waitForExecutionFinish" category="input" kind="boolean" description="Wait for execution to finish."/>
 
-        <property name="executionIds" category="output" kind="map_string_string" description="Id of the execution."/>
+        <property name="executionIds" category="output" kind="map_string_string" description="Ids of the execution."/>
+        <property name="executionStatuses" category="output" kind="map_string_string" description="Statuses of the execution."/>
+    </type>
+
+    <type type="perfectomobile.WaitForExecution" extends="perfectomobile.Task">
+        <property name="executionIds" category="input" kind="map_string_string" description="Ids of the execution. (map [device id] = execution id"/>
+        <property name="executionStatuses" category="output" kind="map_string_string" description="Statuses of the execution."/>
     </type>
 
     <type type="perfectomobile.InstallApplication" extends="perfectomobile.Task">
