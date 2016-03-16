@@ -24,8 +24,9 @@ See the **XL Release Reference Manual** for background information on XL Release
 ## Types ##
 
 + ListDevices
-    * `availableTo`: Define the username to list the devices available to.
-    * `devices`: (Output property) List of available devices (deviceId, available).
+    * `availableTo`: Define the username to list the devices available to. No regex supported.
+    * `model`: The model of the device. For example: Galaxy S6, iPhone 6, ... . Regex supported.
+    * `devices`: (Output property) List of available devices (deviceId, model, available).
 + ExecuteScript
     * `deviceIds`: Ids of the devices to execute the script on.
     * `scriptKey`: Key of the script to be executed
