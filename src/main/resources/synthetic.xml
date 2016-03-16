@@ -17,9 +17,10 @@
 
 
     <type type="perfectomobile.ListDevices" extends="perfectomobile.Task">
-        <property name="availableTo" category="input" description="Define the username to list the devices available to."/>
+        <property name="availableTo" category="input" required="false" description="Define the username to list the devices available to. No regex supported."/>
+        <property name="model" category="input" required="false" description="The model of the device. For example: Galaxy S6, iPhone 6, ... . Regex supported."/>
 
-        <property name="devices" category="output" kind="map_string_string" description="List of available devices (deviceId, available)."/>
+        <property name="devices" category="output" kind="map_string_string" description="List of available devices (deviceId, model, available)."/>
     </type>
 
     <type type="perfectomobile.ExecuteScript" extends="perfectomobile.Task">

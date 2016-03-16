@@ -11,8 +11,17 @@ from com.perfectomobile.httpclient.device import DevicesHttpClient
 credentials = Credentials(perfectomobileServer['username'], perfectomobileServer['password'])
 client = DevicesHttpClient(perfectomobileServer['url'], credentials)
 inputParameters = []
-param = ParameterValue("availableTo", availableTo)
-inputParameters.append(param)
+
+# availableTo
+if availableTo:
+    param = ParameterValue("availableTo", availableTo)
+    inputParameters.append(param)
+
+# model
+if model:
+    param = ParameterValue("model", model)
+    inputParameters.append(param)
+
 perfecto_devices = None
 try:
     perfecto_devices = client.listDevices(inputParameters, False)
